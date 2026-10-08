@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>Cat Screensaver</title>
+    <style>
+        * { margin: 0; padding: 0; overflow: hidden; }
+        body, html { width: 100%; height: 100%; background-color: black; }
+        video {
+            position: fixed;
+            right: 0; bottom: 0;
+            min-width: 100%; min-height: 100%;
+            width: auto; height: auto;
+            object-fit: cover; /* 讓影片完美滿版不變形 */
+        }
+    </style>
+</head>
+<body>
+    <!-- autoplay:自動播放 / muted:必須靜音才會自動播放 / loop:無限循環播放 -->
+    <video autoplay muted loop playsinline>
+        <source src="cat.mp4" type="video/mp4">
+    </video>
+</body>
+</html>
